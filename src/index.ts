@@ -25,27 +25,7 @@ createConnection().then(async connection => {
         });
     });
 
-    // setup express app here
-    // ...
-
-    // start express server
     app.listen(3000);
-
-    // insert new clients for test
-    await connection.manager.save(connection.manager.create(Client, {
-        nom: "Timber",
-        prenom: "Saw",
-        societé: "exa",
-        adresse: "Sfax",
-        tel: "97 278 031"
-    }));
-    await connection.manager.save(connection.manager.create(Client, {
-        nom: "Phantom",
-        prenom: "Assassin",
-        societé: "exa",
-		adresse: "Sfax",
-        tel: "97 278 031"
-    }));
 
     console.log("Express server has started on port 3000. Open http://localhost:3000/clients to see results");
 
