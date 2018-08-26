@@ -19,7 +19,7 @@ export class ClientController {
     }
 
     async remove(request: Request, response: Response, next: NextFunction) {
-        await this.clientRepository.remove(request.params.id);
+        await this.clientRepository.delete(request.params.id);
     }
 
 }

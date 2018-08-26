@@ -13,7 +13,7 @@ export class Client {
     prenom: string;
 
     @Column()
-    societé: string;
+    societe: string;
 
     @Column()
     adresse: string;

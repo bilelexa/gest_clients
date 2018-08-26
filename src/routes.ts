@@ -22,7 +22,7 @@ export const Routes = [{
     action: "save"
 }, {
     method: "delete",
-    route: "/clients",
+    route: "/clients/:id",
     controller: ClientController,
     action: "remove"
 }];

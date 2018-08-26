@@ -4,7 +4,7 @@
    "port": 3306,
    "username": "root",
    "password": "root",
-   "database": "gest_clients",
+   "database": "gest_cmd_clients",
    "synchronize": true,
    "logging": false,
    "entities": [
